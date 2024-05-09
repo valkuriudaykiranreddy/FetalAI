@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetal AI Data Collection Form</title>
+</head>
+<body>
+    <h2>Fetal AI Data Collection Form</h2>
+    <form action="{{ url_for('predict') }}" method="post">
+        
+
+        <label for="baseline_value">Baseline Value:</label><br>
+        <input type="text" id="baseline_value" name="baseline_value" required><br><br>
+
+        <label for="accelerations">Accelerations:</label><br>
+        <input type="text" id="accelerations" name="accelerations" required><br><br>
+
+        <label for="fetal_movement">Fetal Movement:</label><br>
+        <input type="text" id="fetal_movement" name="fetal_movement" required><br><br>
+
+        <label for="uterine_contractions">Uterine Contractions:</label><br>
+        <input type="text" id="uterine_contractions" name="uterine_contractions" required><br><br>
+
+        <label for="light_decelerations">Light Decelerations:</label><br>
+        <input type="text" id="light_decelerations" name="light_decelerations" required><br><br>
+
+        <label for="severe_decelerations">Severe Decelerations:</label><br>
+        <input type="text" id="severe_decelerations" name="severe_decelerations" required><br><br>
+
+        <label for="prolongued_decelerations">Prolongued Decelerations:</label><br>
+        <input type="text" id="prolongued_decelerations" name="prolongued_decelerations" required><br><br>
+
+        <label for="abnormal_short_term_variability">Abnormal Short Term Variability:</label><br>
+        <input type="text" id="abnormal_short_term_variability" name="abnormal_short_term_variability" required><br><br>
+
+        <label for="mean_value_of_short_term_variability">Mean Value of Short Term Variability:</label><br>
+        <input type="text" id="mean_value_of_short_term_variability" name="mean_value_of_short_term_variability" required><br><br>
+
+        <label for="percentage_of_time_with_abnormal_long_term_variability">Percentage of Time with Abnormal Long Term Variability:</label><br>
+        <input type="text" id="percentage_of_time_with_abnormal_long_term_variability" name="percentage_of_time_with_abnormal_long_term_variability" required><br><br>
+
+        <label for="mean_value_of_long_term_variability">Mean Value of Long Term Variability:</label><br>
+        <input type="text" id="mean_value_of_long_term_variability" name="mean_value_of_long_term_variability" required><br><br>
+
+        <label for="histogram_width">Histogram Width:</label><br>
+        <input type="text" id="histogram_width" name="histogram_width" required><br><br>
+
+        <label for="histogram_min">Histogram Min:</label><br>
+        <input type="text" id="histogram_min" name="histogram_min" required><br><br>
+
+        <label for="histogram_max">Histogram Max:</label><br>
+        <input type="text" id="histogram_max" name="histogram_max" required><br><br>
+
+        <label for="histogram_number_of_peaks">Histogram Number of Peaks:</label><br>
+        <input type="text" id="histogram_number_of_peaks" name="histogram_number_of_peaks" required><br><br>
+
+        <label for="histogram_number_of_zeroes">Histogram Number of Zeroes:</label><br>
+        <input type="text" id="histogram_number_of_zeroes" name="histogram_number_of_zeroes" required><br><br>
+
+        <label for="histogram_mode">Histogram Mode:</label><br>
+        <input type="text" id="histogram_mode" name="histogram_mode" required><br><br>
+
+        <label for="histogram_median">Histogram Median:</label><br>
+        <input type="text" id="histogram_median" name="histogram_median" required><br><br>
+
+        <label for="histogram_variance">Histogram Variance:</label><br>
+        <input type="text" id="histogram_variance" name="histogram_variance" required><br><br>
+
+        <label for="histogram_tendency">Histogram Tendency:</label><br>
+        <input type="text" id="histogram_tendency" name="histogram_tendency" required><br><br>
+
+        
+        <button type="submit" class="btn btn-primary">
+            Predict
+          </button>
+    </form>
+    
+</body>
+</html>
